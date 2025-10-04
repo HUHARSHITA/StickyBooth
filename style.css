@@ -1,0 +1,31 @@
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafc;
+}
+#photo-canvas {
+    border: 2px dashed #cbd5e1;
+    background-color: #ffffff;
+    cursor: crosshair;
+    touch-action: none;
+}
+.sticker-button {
+    transition: transform 0.1s;
+}
+.sticker-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+/* Custom border for selected frame */
+.frame-option.selected {
+    border-color: #ec4899; 
+    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.5); 
+}
+#camera-modal {
+    display: none;
+}
+#camera-modal.show {
+    display: flex;
+}
